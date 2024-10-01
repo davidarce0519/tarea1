@@ -1,0 +1,39 @@
+/* Estilos generales para la imagen */
+
+.div{
+    background-color: aquamarine;
+}
+#imagen {
+
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+    display: block;
+}
+
+#texto{
+    background-color: #f9f9f9;  /* Color de fondo suave */
+    border-radius: 15px;  /* Esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    padding: 20px;  /* Espaciado interno */
+    max-width: 600px;  /* Ancho máximo de la caja */
+    margin: 20px auto;  /* Centrado horizontal y margen vertical */
+    font-family: 'Arial', sans-serif;  /* Fuente legible y moderna */
+}
+
+/* Efecto hover para la imagen en pantallas grandes */
+.imagen:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+.text:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    #imagen {
+      display: none;
+    }
+}
